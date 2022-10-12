@@ -12,8 +12,8 @@ pipeline{
         }
         stage('deploy to S3'){
             steps{
-                sh 'aws s3 cp . s3://bucketttn1231 --recursive'
-                sh 'aws s3 cp s3://bucketttn1231/b1.sh copy/.'
+                sh 'aws s3 cp . s3://testlocal12 --recursive'
+                sh 'aws s3 cp s3://testlocal12/b1.sh copy/.'
             } 
             
         }
